@@ -1,0 +1,14 @@
+<p>display-firebase-data works!</p>
+<tbody>
+
+    <tr *ngFor = "let order of chargingStations">
+    
+        <td>{{ order.payload.doc.data().lot_name }}</td>
+        <td><span
+            *ngFor = "let coffee of order.payload.doc.data().chargingStations">
+            </span>
+        </td>
+    
+    
+    </tr>
+</tbody>
